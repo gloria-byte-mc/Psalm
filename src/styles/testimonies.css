@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+/* ── SECTION WRAPPER ── */
+.stories {
+  padding: 100px 60px;
+  background: #1a1410;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* ── SECTION LABEL ── */
+.stories .section-label {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #c9a84c;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* ── SECTION TITLE ── */
+.stories .section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 300;
+  line-height: 1.1;
+  color: #fdf8f0;
+  margin-bottom: 32px;
+  max-width: 550px;
+}
+
+.stories .section-title em {
+  font-style: italic;
+  color: #c9a84c;
+}
+
+/* ── GRID ── */
+.stories-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+/* ── STORY CARD ── */
+.story-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  border-radius: 2px;
+  transition: background 0.3s, border-color 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.story-card:hover {
+  background: rgba(201, 168, 76, 0.08);
+  border-color: rgba(201, 168, 76, 0.4);
+}
+
+/* Featured card spans 2 rows */
+.story-card.featured {
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── FEATURED IMAGE ── */
+.story-image {
+  width: 100%;
+  flex: 1;
+  min-height: 220px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 2px 2px 0 0;
+}
+
+/* ── STORY BODY (wraps tag, title, excerpt, meta) ── */
+.story-body {
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── STORY TAG ── */
+.story-tag {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c9a84c;
+  margin-bottom: 16px;
+  display: block;
+}
+
+/* ── STORY TITLE ── */
+.story-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fdf8f0;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.story-card.featured .story-title {
+  font-size: 30px;
+}
+
+/* ── STORY EXCERPT ── */
+.story-excerpt {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(253, 248, 240, 0.5);
+  margin-bottom: 28px;
+}
+
+/* ── STORY META ── */
+.story-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.story-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #c9a84c;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #1a1410;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.story-author {
+  font-size: 13px;
+  color: rgba(253, 248, 240, 0.6);
+}
+
+/* ── RESPONSIVE ── */
+@media screen and (max-width: 1024px) {
+  .stories {
+    padding: 60px 2rem;
+  }
+
+  .stories-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .story-card.featured {
+    grid-column: span 2;
+    grid-row: auto;
+    flex-direction: row;
+  }
+
+  .story-image {
+    width: 45%;
+    min-height: unset;
+    flex: none;
+    border-radius: 2px 0 0 2px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stories {
+    padding: 48px 1.5rem;
+  }
+
+  .stories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-card.featured {
+    grid-column: span 1;
+    flex-direction: column;
+  }
+
+  .story-image {
+    width: 100%;
+    min-height: 200px;
+    border-radius: 2px 2px 0 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .stories {
+    padding: 40px 1.2rem;
+  }
+
+  .story-body {
+    padding: 24px 20px;
+  }
+
+  .story-card.featured .story-title {
+    font-size: 24px;
+  }
+
+  .story-image {
+    min-height: 180px;
+  }
+}

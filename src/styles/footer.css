@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+/* ── FOOTER ── */
+.footer {
+  background: #1a1410;
+  color: rgba(253, 248, 240, 0.4);
+  padding: 48px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* ── LOGO ── */
+.footer-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fdf8f0;
+}
+
+.footer-logo span {
+  color: #c9a84c;
+}
+
+/* ── COPYRIGHT ── */
+.footer-copy {
+  font-size: 13px;
+  color: rgba(253, 248, 240, 0.4);
+}
+
+/* ── LINKS ── */
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a {
+  color: rgba(253, 248, 240, 0.4);
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #c9a84c;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    padding: 40px 24px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
