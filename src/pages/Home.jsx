@@ -10,7 +10,7 @@ import Footer from '../components/Footer'
 const Home = () => {
   return (
     <>
-    <Navbar />
+   
     <HeroSection />
     <Versebanner />
     <WhyPsalm />

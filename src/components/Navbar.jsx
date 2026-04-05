@@ -45,14 +45,21 @@ export default Navbar
 */}
 
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import '../styles/navbar.css'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50)
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
-    <div className='nav-div'>
+    <div className={scrolled ? 'nav-div scrolled' : 'nav-div'}>
 
       <h1>P<span>S</span>ALM</h1>
 

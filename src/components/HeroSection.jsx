@@ -1,11 +1,19 @@
 import React from 'react'
 import '../styles/hero.css'
 import { FiArrowRight } from "react-icons/fi";
+import Navbar from './Navbar';
+import { useState , useEffect } from 'react';
 
 const HeroSection = () => {
-  return (
+
+
+  
+return (
     <>
     <div className="hero-div">
+
+     <Navbar />
+   
 
       <div className='hero-content1'>
 

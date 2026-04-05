@@ -15,6 +15,7 @@
   color: #c9a84c;
   margin-bottom: 20px;
   display: block;
+  text-align: center;
 }
 
 /* ── SECTION TITLE ── */
@@ -25,7 +26,8 @@
   line-height: 1.1;
   color: #fdf8f0;
   margin-bottom: 32px;
-  max-width: 550px;
+ width: 100%;
+ text-align: center;
 }
 
 .stories .section-title em {
