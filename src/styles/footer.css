@@ -4,7 +4,7 @@
 .footer {
   background: #1a1410;
   color: rgba(253, 248, 240, 0.4);
-  padding: 48px 60px;
+  padding: 48px 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,6 +45,12 @@
 
 .footer-links a:hover {
   color: #c9a84c;
+}
+
+@media screen and (max-width:1280px) {
+  .footer{
+    padding: 48px 60px;
+  }
 }
 
 /* ── RESPONSIVE ── */

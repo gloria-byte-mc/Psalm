@@ -9,8 +9,8 @@
 .why-div{
   display: flex;
   flex-direction: column;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
   height: fit-content;
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -76,6 +76,13 @@ transform: translateY(-4px);
       font-size: 14px;
     line-height: 1.8;
     color: #7a6a5a;;
+}
+
+@media screen and (max-width:1280px) {
+  .why-div{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 
