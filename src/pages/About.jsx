@@ -64,7 +64,7 @@ const handleNavigation = (path) => {
             Psalm was born from a simple conviction — that every believer carries a story powerful enough to shift someone else's eternity.
           </p>
         </div>
-        <div className="about-cross">✝</div>
+        
       </div>
 
       {/* ── MISSION ── */}
