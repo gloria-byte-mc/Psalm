@@ -145,7 +145,7 @@ line-height: 1.8;
 }
 
 .btn2:hover .arrow{
-  transform: translateX(6px);   /* nice slide effect */
+  transform: translateX(6px);
 }
 
 
