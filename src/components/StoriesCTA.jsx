@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/stories-cta.css'
 
-const StoriesCTA = () => {
+const StoriesCta = () => {
   return (
     <div className='stories-cta-div'>
       <p>Have a testimony? Your story could be the one that changes someone's life.</p>
@@ -10,4 +10,4 @@ const StoriesCTA = () => {
   )
 }
 
-export default StoriesCTA
+export default StoriesCta
