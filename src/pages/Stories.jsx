@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import '../styles/stories-page.css'
 import Footer from '../components/Footer'
-import StoriesCTA from '../components/StoriesCta'
+import StoriesCta from '../components/StoriesCta'
 const allStories = [
   {
     id: 1,
@@ -201,7 +201,7 @@ const Stories = () => {
        
 
       </section>
-      <StoriesCTA/>
+      <StoriesCta/>
 
       <Footer />
     </>
