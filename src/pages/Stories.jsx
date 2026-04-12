@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar'
 import '../styles/stories-page.css'
 import Footer from '../components/Footer'
 import StoriesCTA from '../components/StoriesCta'
-
 const allStories = [
   {
     id: 1,
