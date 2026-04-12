@@ -123,9 +123,34 @@
   background-color: #1a1410;
 }
 
+/* Reset React Router Link styles in nav */
+.nav-links ul li a,
+.mobile-menu ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-links ul li a:visited,
+.mobile-menu ul li a:visited {
+  color: inherit;
+}
+
 /* ── MOBILE MENU ── */
 .mobile-menu {
   display: none;
+}
+
+.nav-links ul li a.active {
+  color: #fdf8f0;
+}
+
+.nav-div.scrolled .nav-links ul li a.active {
+  color: #1a1410;
+}
+
+/* mobile too */
+.mobile-menu ul li a.active {
+  color: #1a1410;
 }
 
 @media screen and (max-width:1280px) {

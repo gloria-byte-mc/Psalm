@@ -1,51 +1,7 @@
-{/* 
-
-import React from 'react'
-import '../styles/navbar.css'
-
-const Navbar = () => {
-  return (
-   <>
-
-   <div className='nav-div'>
-    <h1>P<span>S</span>ALM</h1>
-
-
-    <div className='nav-links'>
-
-
-   <ul>
-    <li>Stories</li>
-    <li>Testimonies</li>
-    <li>Community</li>
-    <li>About</li>
-
-
-   </ul>
-
-
-    </div>
-
-
-    <div className='nav-cta'>
-
-      <button>Sign In</button>
-
-    </div>
-
-
-   </div>
-   
-   </>
-  )
-}
-
-export default Navbar
-
-*/}
 
 
 import React, { useState, useEffect } from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import '../styles/navbar.css'
 
 const Navbar = () => {
@@ -61,15 +17,18 @@ const Navbar = () => {
   return (
     <div className={scrolled ? 'nav-div scrolled' : 'nav-div'}>
 
-      <h1>P<span>S</span>ALM</h1>
+        <Link to="/" style={{ textDecoration: 'none' }}>
+        <h1>P<span>S</span>ALM</h1>
+      </Link>
 
       {/* Desktop Links */}
       <div className='nav-links'>
         <ul>
-          <li>Stories</li>
+          <li><NavLink to="/">Home</NavLink></li>
+           <li><NavLink to="/stories">Stories</NavLink></li>
           <li>Testimonies</li>
           <li>Community</li>
-          <li>About</li>
+          <li><NavLink to="/about">About</NavLink></li>
         </ul>
       </div>
 

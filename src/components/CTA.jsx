@@ -1,7 +1,15 @@
 import React from "react";
 import '../styles/cta.css'
+import { useNavigate } from "react-router-dom";
 
 export default function CTA() {
+
+  const navigate = useNavigate()
+
+  const handleNavigation = (path) => {
+    navigate(path)
+  }                       
+
   return (
     <section className="cta-section">
       <p className="section-label">Join the Community</p>
@@ -13,8 +21,9 @@ export default function CTA() {
       </p>
       <div className="cta-actions">
         <a href="#" className="btn-primary">Create Free Account</a>
-        <a href="#" className="btn-ghost">Explore Stories</a>
+        <a className="btn-ghost" onClick={() => handleNavigation('/stories')}>Explore Stories</a>
       </div>
     </section>
   );
-}
+
+}                        

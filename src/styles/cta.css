@@ -94,6 +94,7 @@
 
 .btn-ghost:hover {
   gap: 14px;
+  cursor: pointer;
 }
 
 /* ── RESPONSIVE ── */
